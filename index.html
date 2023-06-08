@@ -15,7 +15,43 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+<picture>
+    <!--==============================================================================      
+                      Landscaepe image sizing --- 960px or smaller
+    ===============================================================================-->
+    <source srcset="images/lands_320px.jpg,
+                     images/lands_640px.jpg 2x,
+                      images/lands_960px.jpg 3x" media="(max-width:320px)">
+
+    <source srcset="images/lands_480px.jpg,
+                      images/lands_960px.jpg 2x,
+                      images/lands_1440px.jpg 3x" media="(max-width:480px)">
+
+    <source srcset="images/lands_720px.jpg,
+                      images/lands_1440px.jpg 2x,
+                      images/lands_2160px.jpg 3x" media="(max-width:720px)">
+
+    <source srcset="images/lands_960px.jpg,
+                      images/lands_1920px.jpg 2x,
+                      images/lands_2880px.jpg 3x" media="(max-width:960px)">
+    <!--==============================================================================               
+                      Square image sizing --- 960px or higher
+    ===============================================================================-->
+    <source srcset="images/square_800px.jpg,
+                      images/square_1600px.jpg 2x,
+                      images/square_2400px.jpg 3x" media="(min-width:1600px)">
+
+    <source srcset="images/square_640px.jpg,
+                      images/square_1280px.jpg 2x,
+                      images/square_1920px.jpg 3x" media="(min-width:1280px)">
+
+    <source srcset="images/square_480px.jpg,
+                      images/square_960px.jpg 2x,
+                      images/square_1440px.jpg 3x" media="(min-width:960px)">
+
+    <img src="images/museum.jpg" alt="art gallery room" class="museumimage">
+  </picture>
+    
   </header>
 </body>
 
